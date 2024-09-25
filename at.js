@@ -19,8 +19,22 @@ document.addEventListener("click", function (e) {
     //jadi selama yang kita klik bukan navbar (menu) dan bukan hamburger, maka akan ter remove
     navbarList.classList.remove("active");
 });
-//popup
 
 //
+const searchInput = document.getElementById("search-input");
+const list = document.getElementById("list");
+const listItems = list.getElementsByTagName("div");
 
 
+searchInput.addEventListener("keyup", function (e) {
+  const listTerm = e.target.value.toLowerCase();
+  for (let i = 0; i < listItems.length; i++) {
+    const text = listItems[i].textContent.toLowerCase();
+    if (text.includes(listTerm)) {
+      listItems[i].style.display = "block";
+    } else {
+      listItems[i].style.display = "none";
+    }
+  }
+});
+//
