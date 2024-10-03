@@ -408,9 +408,9 @@ searchInputMateri.addEventListener("keyup", function (e) {
   const listTerm = e.target.value.toLowerCase();
   for (let i = 0; i < listItemsMateri.length; i++) {
     const text = listItemsMateri[i].textContent.toLowerCase();
-    if (text.includes(listTerm)) {git add
+    if (text.includes(listTerm)) {
       listItemsMateri[i].style.display = "relative";
-    
+      listItemsMateri[i].style.position = "none";
     } else {
       listItemsMateri[i].style.display = "none";
       listItemsMateri[i].style.justifyContent = "center";
@@ -423,3 +423,4 @@ searchInputMateri.addEventListener("keyup", function (e) {
 </script>
 
 </html>
+git
