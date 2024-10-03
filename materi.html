@@ -48,7 +48,7 @@
       <!-- menu -->
       <div class="nav-list mx-15">
         <a href="tele.html"><i class="data bi bi-house-fill" style="width: 10%"></i> Home </a>
-        <a href="#"><i class="data bi bi-exclamation-circle-fill"></i> About Us </a>
+        <a href="tentangkami.html"><i class="data bi bi-exclamation-circle-fill"></i> About Us </a>
         <a href="#fitur"><i class="data bi bi-list-task"></i> Services </a>
         <a href="contact.html"><i class="data" data-feather="phone-call"></i> Contact </a>
         <a href="#kontak"><i class="data bi bi-gear-fill"> </i> Setting </a>
@@ -96,9 +96,9 @@
       <div class="container">
         <div class="col-12 justify-content-center d-flex mt-5">
           <form class="d-flex" style="width: 100%; height: 5rem;" role="search">
-            <input style="background-color: #00000000; border-radius: 20px; border: 2px solid white; color: #fff;" class="form-control me-4 " type="search" placeholder="" aria-label="Search" > 
+            <input id="search-input-materi"  style="background-color: #00000000; border-radius: 20px; border: 2px solid white; color: #fff;" class="form-control me-4 " type="search" placeholder="" aria-label="Search" > 
 
-            <button class="btn btn-outline-success" type="submit" style="color: #fff; width: 10rem; height: 5rem;">Search</button>
+            <button class="btn btn-outline-success" type="submit"  style="color: #fff; width: 10rem; height: 5rem;">Search</button>
           </form>
         </div>
       </div>
@@ -118,7 +118,7 @@
         <a href="#"> <img src="2.png" alt="" style="width: 8rem;"> </a>
       </div>
       <div class="col">
-        <a href="edukasii.html"> <img src="3.png" alt="" style="width: 8rem;"> </a>
+        <a href="tentangkami.html"> <img src="3.png" alt="" style="width: 8rem;"> </a>
       </div>
     </div>
   </div>
@@ -140,7 +140,7 @@
   </div>
 </nav>
 <!-- start container vidio terbaru -->
-<div class="tab-content container d-flex justify-content-center" id="nav-tabContent">
+<div id="list-materi" class="input tab-content container d-flex justify-content-center " id="nav-tabContent">
   <div class="tab-pane fade show active"  id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
 <!--start vidio 1  -->
     <div class="card mb-3 mt-3" style="max-width: 540px;" >
@@ -148,13 +148,6 @@
         <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
           <iframe class="object-fit-none m-1 border rounded" width="100%" height="250" controls src="https://www.youtube.com/embed/_tp2cjsuh0Q?si=pw1YUQjjWGn2rDDC_radio=1_controls=0&mute=1&autoplay=0" >
           </iframe> 
-          
-<!--  -->
-
-<!-- https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&mute=1&autoplay=1 -->
- <!-- https://www.youtube.com/watch?v=_tp2cjsuh0Qc-->
-<!--  -->
-          
         </div>
         <div class="col-md-8" style="align-content: center;">
           <div class="card-body" >
@@ -165,7 +158,6 @@
           </div>
         </div>
       </div>
-
     </div>
     
 <!-- end vidio 1 -->
@@ -409,35 +401,23 @@
    </script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwlvPb-7JftbnWap3iGyG1QWi0Djyvqmn6vonIC1AhBlNFCjoRrqIjOBZSk5JNRQuju3g/exec';
-  const form = document.forms['siloam-at-home'];
-  const btnKirim = document.querySelector('.btn-kirim');
-  const btnLoading = document.querySelector('.btn-loading');
-  const myAlert = document.querySelector('.my-alert')
+const searchInputMateri = document.getElementById("search-input-materi");
+const listMateri = document.getElementById("list-materi");
+const listItemsMateri = listMateri.getElementsByTagName("div");
 
-  form.addEventListener('submit',(e) => {
-    e.preventDefault();
-    // ketika tombol submit dikirim
-    // tampilkan tombol loading dan hilangkan tombol kirim
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
+searchInputMateri.addEventListener("keyup", function (e) {
+  const listTerm = e.target.value.toLowerCase();
+  for (let i = 0; i < listItemsMateri.length; i++) {
+    const text = listItemsMateri[i].textContent.toLowerCase();
+    if (text.includes(listTerm)) {
+      listItemsMateri[i].style.display = "block";
+    } else {
+      listItemsMateri[i].style.display = "none";
+    }
+  }
+});
 
 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then((response) => {
-      // tampilkan tombol kirim dan hilangkan tombol loading
-      btnLoading.classList.toggle('d-none');
-      btnKirim.classList.toggle('d-none');
-      // tampilkan alert
-      myAlert.classList.toggle('d-none');
-      // reset formnya
-      form.reset();
-      console.log('Success!', response);
-        
-      })
-      .catch((error) => console.error('Error!', error.message));
-      
-      });
       
 </script>
 
