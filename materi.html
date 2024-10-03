@@ -140,7 +140,7 @@
   </div>
 </nav>
 <!-- start container vidio terbaru -->
-<div id="list-materi" class=" input tab-content container d-block align-items-center" style="margin: auto; padding: 0 2rem 1rem 1rem; position: absolute;" id="nav-tabContent">
+<div id="list-materi" class=" input tab-content container d-block align-items-center" style="position: absolute; margin: auto; padding: 0 2rem 1rem 1rem; position: absolute;" id="nav-tabContent">
   <div class="tab-pane fade show active"  id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
 <!--start vidio 1  -->
     <div class="card mb-3 mt-3" style="max-width: 540px;" >
@@ -408,9 +408,9 @@ searchInputMateri.addEventListener("keyup", function (e) {
   const listTerm = e.target.value.toLowerCase();
   for (let i = 0; i < listItemsMateri.length; i++) {
     const text = listItemsMateri[i].textContent.toLowerCase();
-    if (text.includes(listTerm)) {
-      listItemsMateri[i].style.display = "block";
-      listItemsMateri[i].style.alignItems = "center";
+    if (text.includes(listTerm)) {git add
+      listItemsMateri[i].style.display = "relative";
+    
     } else {
       listItemsMateri[i].style.display = "none";
       listItemsMateri[i].style.justifyContent = "center";
