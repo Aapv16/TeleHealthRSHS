@@ -23,7 +23,7 @@ document.addEventListener("click", function (e) {
 //
 const searchInput = document.getElementById("search-input");
 const list = document.getElementById("list");
-const listItems = list.getElementsByTagName("div");
+const listItems = list.getElementsByTagName("a");
 
 searchInput.addEventListener("keyup", function (e) {
   const listTerm = e.target.value.toLowerCase();
