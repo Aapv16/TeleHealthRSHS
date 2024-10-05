@@ -199,6 +199,18 @@ nav .nav button:hover {
   display: none;
 }
 
+body .text-center input::placeholder {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+body .no-bullet {
+  list-style: none;
+}
+body #list-materi .no-bullet {
+  list-style: none;
+}
+
 /* laptop */
 @media screen and (max-width: 922px) {
   html {
@@ -290,7 +302,7 @@ nav .nav button:hover {
 @media screen and (max-width: 450px) {
   html {
     font-size: 55%;
-    height: vh;
+    height: 100vh;
   }
   #main .item {
     width: 83%;
@@ -307,4 +319,6 @@ nav .nav button:hover {
   #Navigasi {
     display: inline-block;
   }
+  body #daun {
+    height: 500vh;
 }

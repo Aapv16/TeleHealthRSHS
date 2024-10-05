@@ -135,13 +135,14 @@
 <!--  -->
 <nav>
   <div class=" nav nav-tabs container d-flex justify-content-start col-md-4" id="nav-tab" role="tablist">
-    <button class="nav-link active"    id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Vidio Terbaru</button>
-    <button class="nav-link "    id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Semua Vidio</button>
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Vidio Terbaru</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Semua Vidio</button>
   </div>
 </nav>
 <!-- start container vidio terbaru -->
-<div id="list-materi" class=" input tab-content container d-block align-items-center" style="position: absolute; margin: auto; padding: 0 2rem 1rem 1rem; position: absolute;" id="nav-tabContent">
-  <div class="tab-pane fade show active"  id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+<div id="list-materi" class="tab-content container-fluid justify-content-center" id="nav-tabContent">
+<div class="container-fluid tab-pane fade show active"  id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="">
+    
 <!--start vidio 1  -->
     <div class="card mb-3 mt-3" style="max-width: 540px;" >
       <div class="row g-0" >
@@ -193,20 +194,13 @@
       <div class="row g-0" >
         <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
           <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" >
-          </iframe> 
-          
-<!--  -->
-
-<!-- https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&mute=1&autoplay=1 -->
- <!-- https://www.youtube.com/watch?v=_tp2cjsuh0Qc-->
-<!--  -->
-          
+          </iframe>        
         </div>
+
         <div class="col-md-8">
           <div class="card-body" >
            <a href="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
@@ -215,135 +209,138 @@
     <!-- end vidio 3 -->
     
   </div>
-  <!-- end container vidio terbaru -->
+
 
 <!-- start container semua vidio -->
-  <div class="tab-pane fade d-block col-sm-12 " style="position: absolute; align-items: center;  padding: 0 2rem 0rem .2rem; " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-<!--start semua vidio 1  -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/_tp2cjsuh0Q?si=pw1YUQjjWGn2rDDC_radio=1_controls=0&mute=1&autoplay=0" >
-          </iframe> 
-        
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/_tp2cjsuh0Q?si=pw1YUQjjWGn2rDDC_radio=1_controls=0&mute=1&autoplay=1"> <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+<div class="container-fluid fade col-sm-6 justify-content: center;" style="backface-visibility: ;" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+  <!--start semua vidio 1  -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/_tp2cjsuh0Q?si=pw1YUQjjWGn2rDDC_radio=1_controls=0&mute=1&autoplay=0" >
+            </iframe> 
+          
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/_tp2cjsuh0Q?si=pw1YUQjjWGn2rDDC_radio=1_controls=0&mute=1&autoplay=1"> <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-<!-- end semua vidio 1 -->
-<!--start semua vidio 2  -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/NODhwvWBzsM?si=ujtOTIhsey4Nx8Sz" >
-          </iframe> 
-
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/NODhwvWBzsM?si=ujtOTIhsey4Nx8Sz"><h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  <!-- end semua vidio 1 -->
+  <!--start semua vidio 2  -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/NODhwvWBzsM?si=ujtOTIhsey4Nx8Sz" >
+            </iframe> 
+  
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/NODhwvWBzsM?si=ujtOTIhsey4Nx8Sz"><h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-    
-<!-- end semua vidio 2 -->
-<!-- start semua vidio 3 -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" >
-          </iframe> 
-          
-          
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      
+  <!-- end semua vidio 2 -->
+  <!-- start semua vidio 3 -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" >
+            </iframe> 
+            
+            
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/560O0Q3n-1I?si=N3G6-lWmWI2Q6Jq5" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-    <!-- end semua vidio 3 -->
-<!-- start semua vidio 4 -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/OhUnammOk_M?si=5fEyvTwnl50YXaVn"  >
-          </iframe> 
-          
-          
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/OhUnammOk_M?si=5fEyvTwnl50YXaVn"> <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <!-- end semua vidio 3 -->
+  <!-- start semua vidio 4 -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/OhUnammOk_M?si=5fEyvTwnl50YXaVn"  >
+            </iframe> 
+            
+            
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/OhUnammOk_M?si=5fEyvTwnl50YXaVn"> <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-    <!-- end semua vidio 4 -->
-<!-- start semua vidio 5 -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/kyWyUIYQbHs?si=I3BS2zF14pEsDMwq" title="YouTube video player" >
-          </iframe> 
-          
-          
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/kyWyUIYQbHs?si=I3BS2zF14pEsDMwq" title="YouTube video player" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <!-- end semua vidio 4 -->
+  <!-- start semua vidio 5 -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/kyWyUIYQbHs?si=I3BS2zF14pEsDMwq" title="YouTube video player" >
+            </iframe> 
+            
+            
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/kyWyUIYQbHs?si=I3BS2zF14pEsDMwq" title="YouTube video player" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-    <!-- end semua vidio 5 -->
-<!-- start semua vidio 6 -->
-    <div class="card mb-3 mt-3" style="max-width: 540px;" >
-      <div class="row g-0" >
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
-          <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/e7y_LqoQ0ZE?si=9QvPr-NDZ86JrktT" title="YouTube video player" >
-          </iframe> 
-          
-          
-        </div>
-        <div class="col-md-8">
-          <div class="card-body" >
-           <a href="https://www.youtube.com/embed/e7y_LqoQ0ZE?si=9QvPr-NDZ86JrktT" title="YouTube video player" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <!-- end semua vidio 5 -->
+  <!-- start semua vidio 6 -->
+      <div class="card mb-3 mt-3" style="max-width: 540px;" >
+        <div class="row g-0" >
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-2 d-flex justify-content-center mt-1 mb-1">
+            <iframe  class="object-fit-none border rounded" width="100%" height="200" controls src="https://www.youtube.com/embed/e7y_LqoQ0ZE?si=9QvPr-NDZ86JrktT" title="YouTube video player" >
+            </iframe> 
+            
+            
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+             <a href="https://www.youtube.com/embed/e7y_LqoQ0ZE?si=9QvPr-NDZ86JrktT" title="YouTube video player" > <h5 class="btn btn-primary" style="width: 10rem; height: 3rem; align-content: center;" > Tonton</h5><span><i class="btn btn-primary" style=" justify-content: center; display: inline-block;  margin: 1rem 0.5rem; width: auto; height: auto; align-content: center; width: 2.8rem; height: 2.8rem; margin-bottom: 1.5rem;" data-feather="maximize-2"></i></span></i></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer viky.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
+  
       </div>
-
+      <!-- end semua vidio 6 -->
+  
+  
     </div>
-    <!-- end semua vidio 6 -->
-
-
+  
   </div>
+  <!--  -->
+  <!-- end container vidio terbaru -->
 
-</div>
-<!--  -->
+
 
 
 
@@ -404,16 +401,19 @@ const searchInputMateri = document.getElementById("search-input-materi");
 const listMateri = document.getElementById("list-materi");
 const listItemsMateri = listMateri.getElementsByTagName("div");
 
+
 searchInputMateri.addEventListener("keyup", function (e) {
   const listTerm = e.target.value.toLowerCase();
   for (let i = 0; i < listItemsMateri.length; i++) {
     const text = listItemsMateri[i].textContent.toLowerCase();
     if (text.includes(listTerm)) {
-      listItemsMateri[i].style.display = "relative";
-      listItemsMateri[i].style.position = "none";
+      listItemsMateri[i].style.display = "block"; 
+      listItemsMateri[i].style.alignItems = "center";
+
     } else {
       listItemsMateri[i].style.display = "none";
-      listItemsMateri[i].style.justifyContent = "center";
+
+
     }
   }
 });
