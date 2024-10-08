@@ -211,6 +211,16 @@ body #list-materi .no-bullet {
   list-style: none;
 }
 
+body #wa-dekstop img {
+  width: 5rem;
+  z-index: 9999;
+  transition: ease-in-out 0.2s;
+}
+body #wa-dekstop img:hover {
+  width: 6rem;
+  transition: ease-in-out 0.2s;
+}
+
 /* laptop */
 @media screen and (max-width: 922px) {
   html {
@@ -296,6 +306,9 @@ body #list-materi .no-bullet {
   #main .item {
     width: 30%;
   }
+  body #wa-dekstop img {
+    display: none;
+  }
 }
 
 /*hp */
@@ -321,4 +334,8 @@ body #list-materi .no-bullet {
   }
   body #daun {
     height: 500vh;
+  }
+  body #wa-dekstop img {
+    display: none;
+  }
 }
